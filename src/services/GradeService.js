@@ -2,10 +2,12 @@ import http from '../http-common';
 
 const getAll = () => {
   return http.get('/grade');
+  console.log('Teste all');
 };
 
 const get = (id) => {
   return http.get(`/grade/${id}`);
+  console.log('Teste');
 };
 
 const create = (data) => {
